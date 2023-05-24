@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation | Coding Web</title>
+  <!-- Css Link File -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <form class="form__container" id="form" autocomplete="off">
+    <h2 class="title">Registration Form</h2>
+    <p class="info">Complete the Registration Form</p>
+    <div class="form__grid">
+      <div class="form__group form__group--name">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <p>Must include only letters</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <div class="form__group form__group--lName">
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName">
+        <p>Must include only letters</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <div class="form__group form__group--username">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <p>Must include at least 4 letters and no spaces</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <div class="form__group form__group--email">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <p>It must be a valid email</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <div class="form__group form__group--password">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <p>Must include at least 4 characters</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <div class="form__group form__group--password2">
+        <label for="password2">Confirm Password:</label>
+        <input type="password" name="password2" id="password2">
+        <p>Passwords don't match</p>
+        <span class="icon"><i class='bx bx-x-circle'></i></span>
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
